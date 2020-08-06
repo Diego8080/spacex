@@ -1,10 +1,11 @@
 @import "../scss/normalize";
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
 body {
 	background-color: #010001;
 	padding-top: 54px;
-	font-family: 'Roboto', sans-serif;
+	font-family: "Roboto", sans-serif;
+	color: #ffffff;
 }
 
 .header {
@@ -13,7 +14,6 @@ body {
 	margin: auto;
 	display: flex;
 	justify-content: space-between;
-
 }
 
 .list {
@@ -21,7 +21,6 @@ body {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	
 }
 .item-link {
 	color: #ffffff;
@@ -33,34 +32,97 @@ body {
 }
 
 .item-link:hover {
-	color: #075F8B;
+	color: #075f8b;
 }
 
 .link-second {
 	color: #808080;
 }
 
-.main-text, .main-subtext {
+.main-text,
+.main-subtext {
 	color: #ffffff;
-
 }
 .main-section {
-	margin: 0 auto;
-	
+	text-align: center;
+	padding-top: 126px;
+	padding-bottom: 30px;
 }
 .main-text {
+	font-style: normal;
+	font-weight: normal;
 	font-size: 64px;
 	line-height: 75px;
-	text-align: center;
-	padding-top: 120px;
+	margin-bottom: 26px;
+	margin-top: 0;
 }
 
 .main-subtext {
+	font-style: normal;
+	font-weight: 300;
 	font-size: 16px;
 	line-height: 140%;
-	text-align: center;
 	padding-top: 26px;
-	max-width: 286px;
-	margin: 0 auto;
-	
+	max-width: 268px;
+	margin: auto;
+}
+.main-subtext:after {
+	content: "";
+	width: 1px;
+	height: 59px;
+	display: block;
+	background-color: #ffffff;
+	margin: auto;
+	margin-top: 26px;
+}
+
+.video {
+	height: 750px;
+	max-width: 1230px;
+	width: 90%;
+	margin: auto;
+}
+
+.features {
+	max-width: 1230px;
+	width: 90%;
+	margin: auto;
+	padding: 100px 0;
+	position: relative;
+}
+.features-title {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 140%;
+	text-transform: uppercase;
+	margin-bottom: 45px;
+}
+.table {
+	margin-bottom: 200px;
+}
+
+.table-column {
+	width: 300px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 179.69%;
+}
+
+.features-text {
+	max-width: 490px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 29px;
+}
+
+.rocket {
+	position: absolute;
+	top: 50px;
+	right: 0;
+	z-index: 99;
 }
